@@ -23,7 +23,7 @@ describe("Testando Módulo Calculadora", () => {
   test("calcular potenciacao: 5 ** 2 = 25", () => {
     expect(cal.aoQuadrado(5)).toBe(25);
   });
-  test("calcular raiz quadrada: 112 por volta de 10.6", () => {
-    expect(cal.raizQuadrada(112)).toBeCloseTo(10.6, 2);
+  test("calcular raiz quadrada: 112 por volta de 10.5", () => {
+    expect(cal.raizQuadrada(112)).toBeCloseTo(10.58);
   });
 });
