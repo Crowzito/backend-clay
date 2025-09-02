@@ -1,0 +1,14 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    "target": "es2022", // Alvo mais moderno
+    "module": "NodeNext", // Essencial para "type": "module" no package.json
+    "moduleResolution": "NodeNext", // Essencial para "type": "module"
+    "outDir": "./dist",
+    "rootDir": "./src", // Aponta para onde está seu código-fonte
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*"], // Diz explicitamente para incluir tudo dentro da pasta src
+  "exclude": ["node_modules"] // Opcional, mas boa prática
+}
