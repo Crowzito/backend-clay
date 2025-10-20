@@ -85,7 +85,7 @@ router.put("/pessoas/:id", (req, res, next) => {
   }
 
   // validar se ID existe na lista
-  const pessoa = pessoas.find((p) => p.id == idRecebodp);
+  const pessoa = pessoas.find((p) => p.id == idRecebido);
   if (!pessoa) {
     return res.status(404).json({ error: "pessoa nao encontrado" });
   }
