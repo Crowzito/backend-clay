@@ -5,6 +5,6 @@ const schema = new mongoose.Schema({
   descricao: { type: String, required: true },
 });
 
-const DespartamentoModel = mongoose.model(`Departamentos`, schema);
+const DepartamentoModel = mongoose.model("Departamentos", schema);
 
-module.export = { DespartamentoModel };
+module.exports = DepartamentoModel;

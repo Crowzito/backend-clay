@@ -3,14 +3,14 @@ const yup = require("yup");
 const schema = yup.object().shape({
   nome: yup
     .string()
-    .min(3, "O nome precisa de, pelo menos, 3 caracteres")
-    .max(50, "O nome deve ter, no máximo, 50 caracteres")
-    .required("Nome é obrigatório!"),
+    .min(3, "o nome precisa de pelo menos 3 caracteres")
+    .max(50, "o nome precisa de no máximo 50 caracteres")
+    .required("nome é obrigatório"),
   descricao: yup
     .string()
-    .min(3, "A descrição precisa de, pelo menos, 3 caracteres")
-    .max(250, "A descrição deve ter, no máximo, 250 caracteres")
-    .required("Nome é obrigatório!"),
+    .min(3, "a descricao precisa de pelo menos 3 caracteres")
+    .max(250, "a descrica precisa de no máximo 250 caracteres")
+    .required("descricao é obrigatório"),
 });
 
 async function validarDepartamento(req, res, next) {
